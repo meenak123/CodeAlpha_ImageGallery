@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="heading">Image Gallery</h1>
+
+  <div class="filter-buttons">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image-card" data-category="nature">
+      <img src="./images/forest.jpg" alt="Forest" />
+    </div>
+     <div class="image-card" data-category="nature">
+      <img src="./images/nature1.jpg" alt="nature1" />
+    </div>
+     <div class="image-card" data-category="nature">
+      <img src="./images/nature2.jpg" alt="nature2" />
+    </div>
+     <div class="image-card" data-category="nature">
+      <img src="./images/nature3.jpg" alt="nature3" />
+    </div>
+    <div class="image-card" data-category="city">
+      <img src="./images/city.jpg" alt="City Night" />
+    </div>
+     <div class="image-card" data-category="city">
+      <img src="./images/city1.jpg" alt="City1" />
+    </div>
+     <div class="image-card" data-category="city">
+      <img src="./images/city2.jpg" alt="City2" />
+    </div>
+     <div class="image-card" data-category="city">
+      <img src="./images/city3.jpg" alt="City3" />
+    </div>
+     <div class="image-card" data-category="city">
+      <img src="./images/city4.jpg" alt="City4" />
+    </div>
+    <div class="image-card" data-category="animals">
+      <img src="./images/kitten.jpg" alt="Kitten" />
+    </div>
+     <div class="image-card" data-category="animals">
+      <img src="./images/zebra.jpg" alt="zebra" />
+    </div>
+     <div class="image-card" data-category="animals">
+      <img src="./images/tiger.jpg" alt="tiger" />
+    </div>
+     <div class="image-card" data-category="animals">
+      <img src="./images/squirel.jpg" alt="squirel" />
+    </div>
+    <div class="image-card" data-category="nature">
+      <img src="./images/mountain.jpg" alt="Mountains" />
+    </div>
+    <div class="image-card" data-category="animals">
+      <img src="./images/bear.jpg" alt="Bear" />
+    </div>
+    <div class="image-card" data-category="city">
+      <img src="./images/bulidings.jpg" alt="Buildings" />
+    </div>
+     <div class="image-card" data-category="nature">
+      <img src="./images/nature4.jpg" alt="nature4" />
+    </div>
+    <div class="image-card" data-category="animals">
+      <img src="./images/sheep.jpg" alt="Sheep" />
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <div class="nav">
+      <span id="prev">&#10094;</span>
+      <span id="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
